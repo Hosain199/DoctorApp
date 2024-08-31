@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_app/home_screen.dart';
+import 'package:my_app/schedule_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -14,7 +15,7 @@ class _MainScreenState extends State<MainScreen> {
   final _screens = [
     HomeScreen(),
     Container(),
-    Container(),
+    ScheduleScreen(),
     Container(),
   ];
 

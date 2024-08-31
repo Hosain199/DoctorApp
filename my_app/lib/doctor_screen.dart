@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:my_app/appointment_screen.dart';
 
 class DoctorScreen extends StatelessWidget {
   List imgs = [
@@ -372,8 +373,8 @@ class DoctorScreen extends StatelessWidget {
             ),
             InkWell(
               onTap: () {
-                //Navigator.push(context, MaterialPageRoute(builder: (context) =>
-                //AppointmentScreen(),));
+                Navigator.push(context, MaterialPageRoute(builder: (context) =>
+                AppointmentScreen(),));
               },
               child: Container(
                 width: MediaQuery.of(context).size.width,
