@@ -213,7 +213,7 @@ class HomeScreen extends StatelessWidget {
                             children: [
                               InkWell(
                                 onTap: () {
-                                  // Navigator.push(context, MaterialPageRoute(builder: 
+                                  // Navigator.push(context, MaterialPageRoute(builder:
                                   // (context) => DoctorScreen(),));
                                 },
                                 child: ClipRRect(
@@ -229,7 +229,77 @@ class HomeScreen extends StatelessWidget {
                                   ),
                                 ),
                               ),
+                              Align(
+                                alignment: Alignment.topRight,
+                                child: Container(
+                                  margin: EdgeInsets.all(8),
+                                  height: 45,
+                                  width: 45,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    shape: BoxShape.circle,
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.black12,
+                                        blurRadius: 4,
+                                        spreadRadius: 2,
+                                      ),
+                                    ],
+                                  ),
+                                  child: Icon(
+                                    Icons.favorite_outline,
+                                    color: Colors.redAccent,
+                                    size: 28,
+                                  ),
+                                ),
+                              ),
                             ],
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 5),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Dr. Doctor Name",
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black.withOpacity(0.6),
+                                  ),
+                                ),
+                                Text(
+                                  "Surgeon",
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    color: Colors.black.withOpacity(0.6),
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.amber,
+                                    ),
+                                    SizedBox(
+                                      width: 5,
+                                    ),
+                                    Text(
+                                      "4.9",
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          color: Colors.black.withOpacity(0.6)),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
                         ],
                       ),
