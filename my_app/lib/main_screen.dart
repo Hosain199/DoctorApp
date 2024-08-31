@@ -26,7 +26,7 @@ class _MainScreenState extends State<MainScreen> {
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.white,
         type: BottomNavigationBarType.fixed,
-        selectedItemColor: Colors.redAccent,
+        selectedItemColor: Colors.blueAccent,
         unselectedItemColor: Colors.black26,
         selectedLabelStyle: TextStyle(
           fontWeight: FontWeight.bold,

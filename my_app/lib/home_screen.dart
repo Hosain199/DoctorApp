@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:my_app/doctor_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   List catNames = [
@@ -11,11 +12,11 @@ class HomeScreen extends StatelessWidget {
   ];
 
   List<Icon> catIcons = [
-    Icon(MdiIcons.toothOutline, color: Colors.redAccent, size: 30),
-    Icon(MdiIcons.heartPlus, color: Colors.redAccent, size: 30),
-    Icon(MdiIcons.eye, color: Colors.redAccent, size: 30),
-    Icon(MdiIcons.brain, color: Colors.redAccent, size: 30),
-    Icon(MdiIcons.earHearing, color: Colors.redAccent, size: 30),
+    Icon(MdiIcons.toothOutline, color: Colors.blueAccent, size: 30),
+    Icon(MdiIcons.heartPlus, color: Colors.blueAccent, size: 30),
+    Icon(MdiIcons.eye, color: Colors.blueAccent, size: 30),
+    Icon(MdiIcons.brain, color: Colors.blueAccent, size: 30),
+    Icon(MdiIcons.earHearing, color: Colors.blueAccent, size: 30),
   ];
 
   List imgs = [
@@ -71,7 +72,7 @@ class HomeScreen extends StatelessWidget {
                           child: Icon(
                             Icons.notifications_outlined,
                             size: 30,
-                            color: Colors.redAccent,
+                            color: Colors.blueAccent,
                           ),
                         ),
                       ),
@@ -213,8 +214,8 @@ class HomeScreen extends StatelessWidget {
                             children: [
                               InkWell(
                                 onTap: () {
-                                  // Navigator.push(context, MaterialPageRoute(builder:
-                                  // (context) => DoctorScreen(),));
+                                  Navigator.push(context, MaterialPageRoute(builder:
+                                  (context) => DoctorScreen(),));
                                 },
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.only(
@@ -248,7 +249,7 @@ class HomeScreen extends StatelessWidget {
                                   ),
                                   child: Icon(
                                     Icons.favorite_outline,
-                                    color: Colors.redAccent,
+                                    color: Colors.blueAccent,
                                     size: 28,
                                   ),
                                 ),
